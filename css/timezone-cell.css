@@ -8,6 +8,9 @@
   align-items: flex-end;
   padding-inline-end: .625rem;
   white-space: nowrap;
+  background: var(--white);
+  /* background: blue; */
+  z-index: 1;
 }
 
 .timezoneCell::before{

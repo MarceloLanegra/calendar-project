@@ -2,15 +2,18 @@
 @import './task-cell.css';
 @import './calendar-day.css';
 @import './timezone-cell.css';
+@import './hour-cell.css';
+@import './current-time.css';
 
 .calendar {
+  position: relative;
   color: var(--gray20);
   padding-inline-start: 1.5rem;
   padding-inline-end: 1.5rem;
   --minBlockSize: 4rem;
   --maxBlockSize: auto;
   --minInlineSize: 5rem ;
-  --maxInlineSize: 10rem;
+  --maxInlineSize: 1fr;
 }
 
 .calendar-week {
