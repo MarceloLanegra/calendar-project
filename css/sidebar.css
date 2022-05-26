@@ -1,0 +1,9 @@
+@import './mini-calendar.css';
+@import './finder.css';
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}

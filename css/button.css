@@ -67,6 +67,10 @@
   vertical-align: middle;
 }
 
+.button span{
+  margin-inline-start: .25rem;
+}
+
 .button.is-shadowed {
   box-shadow: 1.0719px 30.9815px 92px rgba(0, 0, 0, 0.0274815),
     0.412881px 11.9336px 29.3037px rgba(0, 0, 0, 0.0425185),

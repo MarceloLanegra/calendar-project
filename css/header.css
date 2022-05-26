@@ -1,0 +1,25 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 1.5rem;
+  border-block-end: 1px solid var(--gray10);
+}
+
+.header-primary{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header-secondary {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header-secondary img{
+  border-radius: 50%;
+  vertical-align: middle;
+}

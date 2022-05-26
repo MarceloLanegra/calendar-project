@@ -1,0 +1,30 @@
+.finderSearch {
+  position: relative;
+  flex: 1;
+}
+
+.finderSearch i {
+  position: absolute;
+  font-size: 1rem;
+  left: 1rem;
+  top: calc(50% - .5rem);
+  block-size: 1rem;
+}
+
+.finderSearch input {
+  font: var(--body1-regular);
+  color: var(--gray30);
+  background: var(--gray10);
+  border-radius: .25rem;
+  border: none;
+  max-inline-size: 12.25rem;
+  inline-size: 100%;
+  padding-block-start: .625rem;
+  padding-block-end: .625rem;
+  padding-inline-start: 2.5rem;
+  outline: none;
+}
+
+.finderSearch input::placeholder {
+  color: var(--gray20);
+}
