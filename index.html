@@ -537,12 +537,59 @@
     </main>
   </div>
   <dialog class="modal">
-    Marcelo
+    <form class="form" action="">
+      <div class="input is-outstanding">
+        <div class="input-body">
+          <input required type="text" placeholder="Añade el título" name="title">
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-clock"></i>
+        <div class="input-body">
+          <input type="date" name="date" required>
+          <input type="time" name="time-start" required>
+          <input type="time" name="time-end" required>
+        </div>
+      </div>
+
+      <div class="input">
+        <i class="icon-users"></i>
+        <div class="input-body">
+          <input type="text" list="guests" name="guests" placeholder="Agregar invitados" required>
+          <datalist id="guests">
+            <option value="Héctor"></option>
+            <option value="Fiorella"></option>
+            <option value="Luis"></option>
+            <option value="Rubén"></option>
+          </datalist>
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <input type="file" multiple>
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-gps"></i>
+        <div class="input-body">
+          <input type="text" name="location" required placeholder="Agregar lugar">
+        </div>
+      </div>
+      <div class="input">
+        <i class="icon-text"></i>
+        <div class="input-body">
+          <textarea name="description" placeholder="Agregar descripción o archivos adjuntos" cols="30" rows="1"></textarea>
+        </div>
+      </div>
+    </form>
+    <div class="modal-actions">
+      <button class="button" id="close-modal">Cancelar</button>
+      <button class="button is-primary">Guardar</button>
+    </div>
   </dialog>
 
-  <script>
-    document.querySelector('.modal').showModal()
-  </script>
+  <script src="./js/app.js" type="module"></script>
 </body>
 
 </html>

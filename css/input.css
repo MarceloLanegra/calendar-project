@@ -1,0 +1,48 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.input i{
+  font-size: 1.5rem;
+}
+
+.input.is-outstanding input{
+  font: var(--subtitle-subtitle1);
+  color: var(--gray50);
+}
+
+.input-body {
+  display: flex;
+  flex: 1;
+}
+
+.input input,
+.input textarea {
+  flex: 1;
+  font: var(--body1-regular);
+  padding-block: .625rem;
+  padding-inline: .75rem;
+  border: none;
+  outline: none;
+  border-radius: .25rem;
+}
+
+.input input:hover,
+.input input:focus,
+.input textarea:hover,
+.input textarea:focus{
+  background-color: var(--gray10);
+}
+
+.input input:focus,.input textarea:focus{
+  box-shadow: 0 1px 0 var(--blue10);
+}
