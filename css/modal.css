@@ -28,3 +28,18 @@
   display: flex;
   justify-content: flex-end;
 }
+
+@media screen and (prefers-color-scheme:dark) {
+  .modal {
+    color: var(--gray10);
+    background: var(--gray50);
+    box-shadow: 1.0719px 30.9815px 92px rgba(255, 255, 255, 0.027),
+    0.412881px 11.9336px 29.3037px rgba(243, 243, 243, 0.043),
+    0.0873403px 2.52442px 7.4963px rgba(238, 237, 237, 0.07);
+    ;
+  }
+
+  .modal::backdrop {
+    background: rgba(0, 0, 0, .7);
+  }
+}

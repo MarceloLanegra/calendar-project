@@ -1,5 +1,4 @@
 .currentTime{
-  /* border: 1px solid red; */
   block-size: 2px;
   background: var(--red10);
   inline-size: 5rem;
@@ -17,4 +16,14 @@
   background: var(--red10);
   border-radius: 50%;
   transform: translateY(-50%);
+}
+
+@media screen and (prefers-color-scheme:dark) {
+  .currentTime {
+    background: var(--green10);
+  }
+
+  .currentTime::before{
+    background: var(--green10);
+  }
 }

@@ -1,5 +1,4 @@
 .timezoneCell{
-  /* border: 1px solid red; */
   font: var(--body3-regular);
   position: sticky;
   inset-block-start: 0;
@@ -9,7 +8,6 @@
   padding-inline-end: .625rem;
   white-space: nowrap;
   background: var(--white);
-  /* background: blue; */
   z-index: 1;
 }
 
@@ -21,4 +19,14 @@
   position: absolute;
   inset-inline-end: 0;
   inset-block-end: 0;
+}
+
+@media screen and (prefers-color-scheme:dark) {
+  .timezoneCell {
+    background: var(--gray50);
+  }
+
+  .timezoneCell::before{
+    background: var(--gray10);
+  }
 }

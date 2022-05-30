@@ -1,0 +1,42 @@
+.calendarOptions details summary {
+  font: var(--body1-medium);
+  list-style-image: url('../icons/Icon=chevron-down.svg');
+}
+
+.calendarOptions details[open] summary{
+  list-style-image: url('../icons/Icon=chevron-up.svg');
+}
+
+.calendarOptions li{
+  list-style-image: url('../icons/Icon=check.svg');
+}
+
+.calendarOptions li.is-selected {
+  list-style-image: url('../icons/Icon=check-square.svg');
+}
+
+.calendarOptions-details ul{
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.calendarOptions-details li {
+  font-size: .875rem;
+  block-size: 1.5rem;
+  line-height: 1.5rem;
+  position: relative;
+
+}
+
+.calendarOptions-details li a{
+  position: absolute;
+  display: inline-block;
+  top: 10%;
+  text-decoration: none;
+}
+
+.calendarOptions-details li a:visited {
+  color: currentColor;
+}

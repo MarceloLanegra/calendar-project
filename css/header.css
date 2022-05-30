@@ -23,3 +23,9 @@
   border-radius: 50%;
   vertical-align: middle;
 }
+
+@media screen and (prefers-color-scheme:dark) {
+  .header {
+    border-block-end: 1px solid var(--gray30);
+  }
+}

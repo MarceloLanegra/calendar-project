@@ -26,7 +26,7 @@
           <h1 class="calendarTitle">Calendario</h1>
         </div>
         <div class="calendarStatus">
-          <button class="button is-secondary">Hoy</button>
+          <button class="button is-secondary" id="today">Hoy</button>
           <span class="calendarStatus-navigation">
             <a href="#" class="button is-compact" aria-label="Anterior semana">
               <i class="icon-chevronLeft" aria-hidden="true"></i>
@@ -126,7 +126,15 @@
         </form>
       </div>
       <div class="calendarOptions">
-
+          <details open class="calendarOptions-details">
+            <summary>Mis calendarios</summary>
+            <ul>
+              <li class="is-selected"><a href="#">Marcelo Lanegra</a></li>
+              <li><a href="#">Cumpleaños</a></a></li>
+              <li><a href="#">Tareas</a></li>
+              <li><a href="#">Recordatorios</a></li>
+            </ul>
+          </details>
       </div>
     </div>
     <main class="calendar">
@@ -579,7 +587,8 @@
       <div class="input">
         <i class="icon-text"></i>
         <div class="input-body">
-          <textarea name="description" placeholder="Agregar descripción o archivos adjuntos" cols="30" rows="1"></textarea>
+          <textarea name="description" placeholder="Agregar descripción o archivos adjuntos" cols="30"
+            rows="1"></textarea>
         </div>
       </div>
     </form>

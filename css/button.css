@@ -17,7 +17,7 @@
 }
 
 .button.is-primary {
-  background-color: var(--blue10);
+  background: var(--blue10);
   color: var(--white);
 }
 
@@ -75,4 +75,28 @@
   box-shadow: 1.0719px 30.9815px 92px rgba(0, 0, 0, 0.0274815),
     0.412881px 11.9336px 29.3037px rgba(0, 0, 0, 0.0425185),
     0.0873403px 2.52442px 7.4963px rgba(0, 0, 0, 0.07);
+}
+
+@media screen and (prefers-color-scheme:dark) {
+  .button i{
+    color: var(--gray10);
+    /* background: var(--gray50); */
+  }
+
+  .button:hover,
+  .button:focus,
+  .button.is-secondary:hover,
+  .button.is-secondary:focus,
+  .button.is-rounded:hover,
+  .button.is-rounded:focus,
+  .button.is-compact:hover,
+  .button.is-compact:focus {
+    background-color: var(--gray30);
+  }
+
+  .button.is-shadowed {
+    box-shadow: 1.0719px 30.9815px 92px rgba(255, 255, 255, 0.027),
+      0.412881px 11.9336px 29.3037px rgba(243, 243, 243, 0.043),
+      0.0873403px 2.52442px 7.4963px rgba(238, 237, 237, 0.07);
+  }
 }

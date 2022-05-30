@@ -28,3 +28,10 @@
 .finderSearch input::placeholder {
   color: var(--gray20);
 }
+
+@media screen and (prefers-color-scheme:dark) {
+  .finderSearch input {
+    color: var(--gray10);
+    background: var(--gray30);
+  }
+}

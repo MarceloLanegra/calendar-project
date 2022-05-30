@@ -10,3 +10,10 @@
   background-repeat: no-repeat;
   background-position: right .5rem center;
 }
+
+@media screen and (prefers-color-scheme:dark) {
+  .select {
+    color: var(--gray10);
+    background: var(--gray50);
+  }
+}

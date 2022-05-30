@@ -24,3 +24,9 @@
 }
 
 .calendar-day {}
+
+@media screen and (prefers-color-scheme:dark) {
+  .calendar {
+    color: var(--gray10);
+  }
+}
