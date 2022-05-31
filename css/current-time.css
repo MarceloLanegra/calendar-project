@@ -19,11 +19,13 @@
 }
 
 @media screen and (prefers-color-scheme:dark) {
-  .currentTime {
+  .currentTime,
+  .currentTime-day {
     background: var(--green10);
   }
 
-  .currentTime::before{
+  .currentTime::before,
+  .currentTime-day::before{
     background: var(--green10);
   }
 }
