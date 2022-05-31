@@ -26,11 +26,10 @@ function setCurrentTimePosition() {
 
   $currentTime.style.top = `${cellBlockSize * (currentHour) + calendarDayBlockSize + (cellBlockSize / 60) * currentMin}px`
   $currentTime.style.left = `${cellInlineSize * (currentDay) + calendarTimezoneCellInlineSize + 24}px`
-  $currentTime.style.width = `${cellInlineSize}px`
+  $currentTime.style.width = `${cellInlineSize}px`  
 }
 
 window.intervalCurrentTimePosition = null
-
 
 function intervalCurrentTimePosition(interval = 1000) {
   clearInterval(window.intervalCurrentTimePosition)

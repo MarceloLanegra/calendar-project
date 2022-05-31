@@ -1,3 +1,3 @@
 document.getElementById("today").onclick = function () {
-  location.href = "./week-day.html";
+  location.href = "./calendar-by-day.html";
 };

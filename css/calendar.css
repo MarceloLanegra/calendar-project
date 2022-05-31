@@ -23,7 +23,17 @@
   min-block-size: 700px;
 }
 
-.calendar-day {}
+.calendar-day {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 7.75rem repeat(24, minmax(var(--minBlockSize),var(--maxBlockSize)));
+  min-block-size: 700px;
+}
+
+.calendar-day .calendarDay{
+  /* grid-column-start: 2; */
+  align-items: flex-start;
+}
 
 @media screen and (prefers-color-scheme:dark) {
   .calendar {

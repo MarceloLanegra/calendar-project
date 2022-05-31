@@ -1,4 +1,4 @@
-.currentTime{
+.currentTime,.currentTime-day{
   block-size: 2px;
   background: var(--red10);
   inline-size: 5rem;
@@ -8,7 +8,7 @@
   z-index: 1;
 }
 
-.currentTime::before{
+.currentTime::before,.currentTime-day::before{
   content: '';
   display: block;
   inline-size: 1rem;
