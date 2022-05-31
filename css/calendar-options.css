@@ -35,6 +35,7 @@
   display: inline-block;
   top: 10%;
   text-decoration: none;
+  color: var(--gray50);
 }
 
 .calendarOptions-details li a:visited {

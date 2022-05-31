@@ -20,7 +20,7 @@
           <button class="button is-compact">
             <i class="icon-hamburguerButton"></i>
           </button>
-          <a href="/" aria-current="page" aria-label="Calendar" tabindex="-1">
+          <a href="./" aria-current="page" aria-label="Calendar" tabindex="-1">
             <img class="calendarLogo" src="./images/logo.png" alt="Logo Calendar">
           </a>
           <h1 class="calendarTitle">Calendario</h1>
@@ -40,8 +40,8 @@
       </div>
       <div class="header-secondary">
         <select class="select" name="" id="">
-          <option value="" selected>Semana</option>
-          <option value="">Día</option>
+          <option value="">Semana</option>
+          <option value="" selected>Día</option>
         </select>
         <a href="#user">
           <img src="./images/user.jpg" alt="Imagen de usuario">
@@ -158,12 +158,6 @@
 
         <span class="hourCell">1 AM</span>
         <div class="taskCell">
-          <div tabindex="0" class="task" aria-label="de 17:00 a 18:00, hacer ejercicio">
-            <p>Hacer ejercicio</p>
-            <p>
-              <time datetime="17:00">5</time>- <time datetime="18:00">6 pm</time>
-            </p>
-          </div>
         </div>
 
         <span class="hourCell">2 AM</span>
@@ -179,7 +173,14 @@
         <div class="taskCell"></div>
 
         <span class="hourCell">6 AM</span>
-        <div class="taskCell"></div>
+        <div class="taskCell">
+          <div tabindex="0" class="task" aria-label="de 6:00 a 7:00, hacer ejercicio">
+            <p>Hacer ejercicio</p>
+            <p>
+              <time datetime="6:00">6</time>- <time datetime="7:00">7 am</time>
+            </p>
+          </div>
+        </div>
 
         <span class="hourCell">7 AM</span>
         <div class="taskCell"></div>
@@ -196,10 +197,24 @@
         <div class="taskCell"></div>
 
         <span class="hourCell">12 PM</span>
-        <div class="taskCell"></div>
+        <div class="taskCell">
+          <div tabindex="0" class="task" aria-label="de 12:00 a 13:00, Presentación trabajo final">
+            <p>Presentación trabajo final</p>
+            <p>
+              <time datetime="12:00">12</time>- <time datetime="13:00">1 pm</time>
+            </p>
+          </div>
+        </div>
 
         <span class="hourCell">1 PM</span>
-        <div class="taskCell"></div>
+        <div class="taskCell">
+          <div tabindex="0" class="task" aria-label="de 13:00 a 14:00, Presentación trabajo final">
+            <p>Presentación trabajo final</p>
+            <p>
+              <time datetime="13:00">1</time>- <time datetime="14:00">2 pm</time>
+            </p>
+          </div>
+        </div>
 
         <span class="hourCell">2 PM</span>
         <div class="taskCell"></div>

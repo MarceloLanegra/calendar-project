@@ -21,8 +21,8 @@ function setCurrentTimePositionDay() {
     // console.log({ calendarBlockSize })
     const cellBlockSize = calendarDayBlockSize / 24
 
-    // $currentTimeDay.style.top = `${cellBlockSize * (currentHour) + calendarBlockSize + (cellBlockSize / 60) * currentMin}px`
-    $currentTimeDay.style.left = `${cellInlineSize * (currentDay) + calendarTimezoneCellInlineSize + 24}px`
+    $currentTimeDay.style.top = `${cellBlockSize * (currentHour) + calendarBlockSize + (cellBlockSize / 60) * currentMin}px`
+    $currentTimeDay.style.left = `${calendarTimezoneCellInlineSize + 24}px`
     $currentTimeDay.style.width = `${cellInlineSize}px`;
 }
 
